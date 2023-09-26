@@ -10,7 +10,7 @@ section{
     display: block;
     background: blueviolet;
     width: 250px;
-   
+   float: left;
 }
 
 
