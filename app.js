@@ -158,12 +158,16 @@ cart.push(createProduct("Notebook Asus", "Notebook gamer i7 9800k 144 hz", 7000,
 function createItemCart(product){
     let section = document.createElement("section")
     section.setAttribute("class", "item-cart")
+
+    let image = document.createElement("img")
+    image.setAttribute("src", product.image)
+    image.setAttribute("class", "imag-cart")
     
     let title = document.createElement("strong")
     title.innerHTML = product.title
 
     let price = document.createElement("h3")
-    price.innerHTML = product.price
+    price.innerHTML = "$ " + product.price
 
     /*
     let description = document.createElement("p")
@@ -174,6 +178,7 @@ function createItemCart(product){
     button.innerHTML = "Add"
     */
 
+    section.append(image)
     section.append(title)
     section.append(price)
 

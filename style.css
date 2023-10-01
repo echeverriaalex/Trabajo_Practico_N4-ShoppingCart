@@ -4,7 +4,8 @@
 }
 
 header{
-    background: red;
+    /* background: red; */
+    margin: 0px;
 }
 
 
@@ -13,8 +14,8 @@ main{
 }
 
 nav{
-    background: rgb(214, 126, 11);
-    height: 80px;
+    /* background: rgb(214, 126, 11); */
+    height: 50px;
     margin: 5px 5px;
     font-size: 25px;
     display: flex;
@@ -27,15 +28,34 @@ a{
 }
 
 section{
+    text-align: center;
     display: block;
-    background: blueviolet;
+    background: rgb(143, 140, 146);
     width: 300px;
     float: left;
-    margin: 20px 10px;
+    border-radius: 15px;
+    margin: 0px 10px;
+    padding: 10px 10px;
+}
+
+.item-cart{
+    display: block;
+    background: rgb(255, 255, 255);
+    width: 220px;
+    margin: 10px auto;
+    float: none;
+}
+
+.imag-cart{
+    width: 60px;
+    height: 40px;
+    display: block;
+    margin: auto;
 }
 
 .products-list{
-    background: rgb(153, 112, 51);
+    border-radius: 10px;
+    background: rgb(175, 172, 167);
    /* display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -50,15 +70,11 @@ section{
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    margin: 20px 20px;
+    margin: 0 20px;
 }
 
 
-.item-cart{
-    background: rgb(80, 226, 43);
-    margin: 10px 10px;
-    width: 200px;
-}
+
 
 
 article{
@@ -95,4 +111,8 @@ article button:hover{
     display: flex;
     flex-direction: row;
     justify-content: center;
+}
+
+button{
+    float: inline-end;
 }
