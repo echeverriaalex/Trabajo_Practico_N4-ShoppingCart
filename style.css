@@ -1,3 +1,8 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
 header{
     background: red;
 }
@@ -37,7 +42,7 @@ section{
     width: 70%;
     */
     display:inline-block;
-    width: 600px;
+    width: auto;
    
 
 
@@ -55,9 +60,39 @@ section{
     width: 200px;
 }
 
+
 article{
     
     width: 250px;
     background: red;
     margin: 20px 10px;
+}
+
+article img{
+    width: 250px;
+    height: 220px;
+}
+
+article button{
+    width: 180px;
+    height: 50px;
+    text-align: center;
+    font-size: 17px;
+    display: block;
+    border-radius: 10px;
+    margin: 10px auto;
+    background: rgb(39, 158, 255);
+    transition: 1.5s;
+}
+
+article button:hover{
+    background: rgb(82, 202, 13);
+    pointer-events: painted;
+}
+
+.card{
+    margin: 5px 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
