@@ -28,7 +28,7 @@ let removeProduct = (product) =>{
 */
 
 // create an article to add to DOM with product's data 
-function createArticle(product){
+function createProductDOM(product){
 
     let div = document.createElement("div")
     div.setAttribute("class", "card")
@@ -116,7 +116,7 @@ function createArticle(product){
 function showProducts(){
     let productsList = document.getElementById("products-list");
     productsArray.forEach(product =>{       
-        let article = createArticle(product)
+        let article = createProductDOM(product)
         productsList.append(article)
     })
 }
